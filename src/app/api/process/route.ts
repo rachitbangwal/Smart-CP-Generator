@@ -20,16 +20,16 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Convert files to buffers
+    // Convert files to buffers and get MIME types
     const fixtureBuffer = Buffer.from(await fixture.arrayBuffer());
     const baseCPBuffer = Buffer.from(await baseCP.arrayBuffer());
     const clausesBuffer = Buffer.from(await clauses.arrayBuffer());
 
-    // Process individual documents
+    // Process individual documents with their MIME types
     const [fixtureText, baseCPDoc, clausesList] = await Promise.all([
-      processFixtureRecap(fixtureBuffer),
-      processBaseCP(baseCPBuffer),
-      processNegotiatedClauses(clausesBuffer),
+      processFixtureRecap(fixtureBuffer, fixture.type),
+      processBaseCP(baseCPBuffer, baseCP.type),
+      processNegotiatedClauses(clausesBuffer, clauses.type),
     ]);
 
     // Merge documents

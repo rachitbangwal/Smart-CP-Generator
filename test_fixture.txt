@@ -1,0 +1,6 @@
+Test fixture recap
+1. Vessel Name: MV Test
+2. Charter Rate: 10,000 USD/day
+3. Duration: 6 months
+4. Loading Port: Test Port A
+5. Discharging Port: Test Port B

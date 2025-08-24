@@ -2,6 +2,7 @@ import { Buffer } from 'buffer';
 import mammoth from 'mammoth';
 import { Document, Paragraph, TextRun, Packer } from 'docx';
 import { CPDocument } from '../types';
+import { extractTextFromPDF } from './pdfUtils';
 
 class DocumentProcessingError extends Error {
   documentType: string;
@@ -15,10 +16,14 @@ class DocumentProcessingError extends Error {
   }
 }
 
-export async function processFixtureRecap(file: Buffer): Promise<string> {
+export async function processFixtureRecap(file: Buffer, mimeType: string): Promise<string> {
   try {
-    const result = await mammoth.extractRawText({ buffer: file });
-    return result.value;
+    if (mimeType === 'application/pdf') {
+      return await extractTextFromPDF(file);
+    } else {
+      const result = await mammoth.extractRawText({ buffer: file });
+      return result.value;
+    }
   } catch (error) {
     throw new DocumentProcessingError({
       message: 'Failed to process fixture recap',
@@ -28,9 +33,15 @@ export async function processFixtureRecap(file: Buffer): Promise<string> {
   }
 }
 
-export async function processBaseCP(file: Buffer): Promise<Document> {
+export async function processBaseCP(file: Buffer, mimeType: string): Promise<Document> {
   try {
-    const result = await mammoth.extractRawText({ buffer: file });
+    let text: string;
+    if (mimeType === 'application/pdf') {
+      text = await extractTextFromPDF(file);
+    } else {
+      const result = await mammoth.extractRawText({ buffer: file });
+      text = result.value;
+    }
     // Convert to docx Document object for manipulation
     const doc = new Document({
       sections: [{
@@ -38,7 +49,7 @@ export async function processBaseCP(file: Buffer): Promise<Document> {
         children: [
           new Paragraph({
             children: [
-              new TextRun(result.value)
+              new TextRun(text)
             ],
           }),
         ],
@@ -54,11 +65,17 @@ export async function processBaseCP(file: Buffer): Promise<Document> {
   }
 }
 
-export async function processNegotiatedClauses(file: Buffer): Promise<string[]> {
+export async function processNegotiatedClauses(file: Buffer, mimeType: string): Promise<string[]> {
   try {
-    const result = await mammoth.extractRawText({ buffer: file });
+    let text: string;
+    if (mimeType === 'application/pdf') {
+      text = await extractTextFromPDF(file);
+    } else {
+      const result = await mammoth.extractRawText({ buffer: file });
+      text = result.value;
+    }
     // Split into individual clauses based on numbering or formatting
-    return result.value.split(/\n(?=\d+\.)/);
+    return text.split(/\n(?=\d+\.)/);
   } catch (error) {
     throw new DocumentProcessingError({
       message: 'Failed to process negotiated clauses',

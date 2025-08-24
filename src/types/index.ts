@@ -3,7 +3,7 @@ export interface CPDocument {
   name: string;
   content: Buffer;
   type: 'fixture' | 'baseCP' | 'clauses';
-  mimeType: string;
+  mimeType: 'application/pdf' | 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
   uploadedAt: Date;
 }
 

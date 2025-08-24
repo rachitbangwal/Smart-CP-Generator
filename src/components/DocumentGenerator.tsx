@@ -65,6 +65,7 @@ export function DocumentGenerator() {
   const acceptedFormats = {
     'application/vnd.openxmlformats-officedocument.wordprocessingml.document': ['.docx'],
     'application/msword': ['.doc'],
+    'application/pdf': ['.pdf'],
   };
 
   return (
