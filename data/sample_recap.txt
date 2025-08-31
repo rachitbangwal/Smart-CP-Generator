@@ -1,0 +1,54 @@
+RECAP - M/V ATLANTIC VOYAGER
+
+Vessel: ATLANTIC VOYAGER
+Flag: Marshall Islands  
+Built: 2018
+DWT: 180,000 MT
+LOA: 289 meters
+
+Charterer: Global Grain Trading S.A.
+Owner: Atlantic Shipping Holdings Ltd.
+
+Cargo: 170,000 MT (+/- 5% in Charterer's option) Wheat in Bulk
+Loading Port: Norfolk, Virginia, USA
+Discharge Port: Hamburg, Germany
+
+Freight Rate: USD 35.75 per metric ton
+Payment: 95% on signing B/L, 5% on completion of discharge
+
+Laycan: 15th March 2024 - 25th March 2024
+Cancelling: 25th March 2024, 23:59 hrs local time
+
+Laytime: 
+- Loading: 72 hours total (3 days)
+- Discharging: 96 hours total (4 days)
+
+Loading Rate: 2,500 MT per weather working day
+Discharging Rate: 2,000 MT per weather working day
+
+Demurrage: USD 18,500 per day or pro rata
+Despatch: USD 9,250 per day or pro rata
+
+Notice:
+- Loading: 48 hours notice of readiness
+- Discharging: 72 hours notice of readiness
+
+Agents:
+- Loading: Atlantic Maritime Services Inc.
+- Discharging: Hamburg Port Logistics GmbH
+
+Charter Party: As per GENCON 1994 with amendments per rider clauses attached
+
+Brokerage: 2.5% on freight payable to Maritime Brokers International
+
+Additional Terms:
+- Weather permitting clause applies
+- Both to blame collision clause included
+- New Jason clause included
+- General Average to be settled according to York Antwerp Rules 2016
+
+Approved by:
+Charterer: Global Grain Trading S.A.
+Owner: Atlantic Shipping Holdings Ltd.
+
+Date: 12th February 2024

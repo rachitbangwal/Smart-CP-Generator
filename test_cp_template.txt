@@ -1,0 +1,42 @@
+CHARTER PARTY AGREEMENT
+
+This Charter Party Agreement ("Agreement") is made between the Owner and the Charterer for the vessel described below.
+
+VESSEL DETAILS:
+Vessel Name: [VESSEL_NAME]
+Deadweight: [DWT] metric tons
+Built: [BUILT]
+Flag: [FLAG]
+Classification: [CLASS]
+
+CARGO DETAILS:
+Cargo Type: [CARGO_TYPE]
+Quantity: [QUANTITY]
+Loading Port: [LOADING_PORT]
+Discharging Port: [DISCHARGE_PORT]
+
+COMMERCIAL TERMS:
+Freight Rate: [FREIGHT_RATE]
+Laytime: [LAYTIME]
+Demurrage Rate: [DEMURRAGE]
+
+PARTIES:
+Charterer: [CHARTERER]
+Owner: [OWNER]
+
+Charter Date: [DATE]
+
+TERMS AND CONDITIONS:
+1. The vessel shall be delivered at the loading port in good condition and ready to receive cargo.
+2. All port charges at loading port for Charterer's account.
+3. All port charges at discharging port for Charterer's account.
+4. Weather permitting clause applies.
+5. Both parties agree to the terms stated herein.
+
+This Charter Party Agreement shall be governed by maritime law.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement.
+
+Charterer: _________________ Date: _________
+
+Owner: _________________ Date: _________

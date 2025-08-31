@@ -1,0 +1,113 @@
+UNIFORM GENERAL CHARTER
+(GENCON)
+
+Code Name: "GENCON"
+
+PART I
+
+1. Vessel
+Name: ___________________________
+Flag: ___________________________
+Year of build: ___________________
+
+2. Owners
+Name: ___________________________
+Place of business: _______________
+___________________________________
+
+3. Charterers  
+Name: ___________________________
+Place of business: _______________
+___________________________________
+
+4. Agents
+Loading: _________________________
+Discharging: ____________________
+
+5. Place of loading
+Port: ___________________________
+Country: ________________________
+
+6. Place of discharge
+Port: ___________________________
+Country: ________________________
+
+7. Cargo
+Description: _____________________
+___________________________________
+Quantity: _______________________ metric tons
+Margin: ________________________
+
+8. Freight
+Rate: USD ________ per metric ton
+Payment terms: __________________
+___________________________________
+
+9. Laydays/Cancelling
+Laydays commence: _______________
+Cancelling date: ________________
+
+10. Loading/Discharging
+Loading rate: ___________________ metric tons per weather working day
+Discharging rate: _______________ metric tons per weather working day
+
+11. Demurrage/Despatch
+Demurrage: USD _________________ per day
+Half demurrage: USD _____________ per day  
+Despatch: USD __________________ per day
+
+12. General Provisions
+Laytime: _______________________
+Notice of readiness: ____________
+
+PART II
+
+1. LOADING
+(a) The cargo shall be loaded, stowed and trimmed by the Charterers free of expense to the Vessel, but under the supervision of the Master. The Charterers shall provide and lay all dunnage material which shall be of suitable quality.
+
+(b) Loading shall be in accordance with the custom of the port unless otherwise agreed.
+
+2. DISCHARGING  
+(a) The cargo shall be discharged by the Charterers free of expense to the Vessel, but under the supervision of the Master.
+
+(b) Discharging shall be in accordance with the custom of the port unless otherwise agreed.
+
+3. LAYTIME
+(a) Separate laytime shall be allowed for loading and discharging as indicated in Part I.
+
+(b) Time shall commence to count __ hours after notice of readiness has been given.
+
+4. DEMURRAGE
+If the loading or discharging is not completed within the time allowed, demurrage at the rate stated in Part I shall be paid by the Charterers for any time used in excess.
+
+5. DESPATCH
+If the loading or discharging is completed in less time than allowed, despatch at the rate stated in Part I shall be paid by the Owners to the Charterers for time saved.
+
+6. CANCELLING CLAUSE
+Should the Vessel not be ready to load on or before the cancelling date indicated in Part I, the Charterers shall have the option of cancelling this Charter Party.
+
+7. BOTH TO BLAME COLLISION CLAUSE
+If the Vessel comes into collision with another vessel as a result of the negligence of the other vessel and any act, neglect or default of the Master, Mariner, Pilot or the servants of the Owners in the navigation or in the management of the Vessel, the owners of the cargo shall indemnify the Owners against all loss or liability to the other or non-carrying vessel.
+
+8. GENERAL AVERAGE
+General Average shall be adjusted, stated and settled according to York-Antwerp Rules and as to matters not provided for by these Rules, according to the laws and usages at the place where the adventure ends.
+
+9. NEW JASON CLAUSE  
+In the event of accident, danger, damage or disaster before or after the commencement of the voyage, resulting from any cause whatsoever, whether due to negligence or not, for which, or for the consequence of which, the Owners are not responsible by statute, contract or otherwise, the cargo, shippers, consignees or owners of the cargo shall contribute with the Owners in General Average to the payment of any sacrifices, losses or expenses of a General Average nature that may be made or incurred.
+
+10. PAYMENT OF FREIGHT
+Freight shall be paid as indicated in Part I without discount.
+
+11. LIEN CLAUSE
+The Owners shall have a lien on the cargo for freight, deadfreight, demurrage and charges incurred at the port of loading and shall have the right to land the cargo at any convenient port and sell it at public auction.
+
+12. PARAMOUNT CLAUSE
+This Bill of Lading shall have effect subject to the provisions of the International Convention for the Unification of certain rules relating to Bills of Lading signed at Brussels on 25th August 1924 (Hague Rules) or any national legislation giving effect thereto in the country of shipment.
+
+IN WITNESS WHEREOF the parties have executed this Charter Party on the date first above written.
+
+OWNERS: _________________________
+        _________________________
+        
+CHARTERERS: _____________________
+            _____________________

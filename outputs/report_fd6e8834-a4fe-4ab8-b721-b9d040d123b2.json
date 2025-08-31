@@ -1,0 +1,249 @@
+{
+  "generation_summary": {
+    "template_file": "template_2dfe1dc6-3f5b-4926-bd8f-66f4c03ec767.pdf",
+    "recap_file": "recap_801255a3-4223-427d-ab13-28dd89cd6ac1.pdf",
+    "generated_at": "2025-08-30 18:57:11",
+    "processing_time": "Real processing completed"
+  },
+  "extracted_terms": {
+    "vessel_name": "GH DANZERO",
+    "dwt": "63,326 MT",
+    "built": "2014",
+    "flag": "MARSHALL ISLANDS",
+    "class": "AMERICAN BUREAU OF SHIPPING",
+    "cargo_type": "CO2 FITTED",
+    "quantity": "63,326 MT",
+    "loading_port": "naabsa",
+    "discharge_port": "s owns",
+    "freight_rate": "USD 40.95 pmt",
+    "laytime": "00 hours",
+    "despatch": "if any at load",
+    "charterer": "s' written consent",
+    "owner": "GH DANZERO LLC",
+    "charter_date": "29-11-2017",
+    "commission": "s on full freight and estimated despatch if any at load",
+    "notice": "VESSEL IN BALLAST",
+    "bills_lading": "at load port",
+    "insurance": "shall be fully maintained and will not be changed"
+  },
+  "mapped_fields": [
+    {
+      "template_field": "VESSEL NAME",
+      "recap_value": "GH DANZERO",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "DWT",
+      "recap_value": "63,326 MT",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "BUILT",
+      "recap_value": "2014",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "FLAG",
+      "recap_value": "MARSHALL ISLANDS",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CLASS",
+      "recap_value": "AMERICAN BUREAU OF SHIPPING",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CARGO TYPE",
+      "recap_value": "CO2 FITTED",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "QUANTITY",
+      "recap_value": "63,326 MT",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "LOADING PORT",
+      "recap_value": "naabsa",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "DISCHARGE PORT",
+      "recap_value": "s owns",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "FREIGHT RATE",
+      "recap_value": "USD 40.95 pmt",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "LAYTIME",
+      "recap_value": "00 hours",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "DESPATCH",
+      "recap_value": "if any at load",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CHARTERER",
+      "recap_value": "s' written consent",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "OWNER",
+      "recap_value": "GH DANZERO LLC",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CHARTER DATE",
+      "recap_value": "29-11-2017",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "COMMISSION",
+      "recap_value": "s on full freight and estimated despatch if any at load",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "NOTICE",
+      "recap_value": "VESSEL IN BALLAST",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "BILLS LADING",
+      "recap_value": "at load port",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "INSURANCE",
+      "recap_value": "shall be fully maintained and will not be changed",
+      "confidence": 0.9,
+      "status": "mapped"
+    }
+  ],
+  "changes_made": [
+    {
+      "section": "Document Update",
+      "change": "Updated Vessel Name to 'GH DANZERO'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Dwt to '63,326 MT'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Built to '2014'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Flag to 'MARSHALL ISLANDS'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Class to 'AMERICAN BUREAU OF SHIPPING'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Cargo Type to 'CO2 FITTED'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Quantity to '63,326 MT'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Loading Port to 'naabsa'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Discharge Port to 's owns'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Freight Rate to 'USD 40.95 pmt'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Laytime to '00 hours'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Despatch to 'if any at load'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Charterer to 's' written consent'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Owner to 'GH DANZERO LLC'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Charter Date to '29-11-2017'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Commission to 's on full freight and estimated despatch if any at load'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Notice to 'VESSEL IN BALLAST'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Bills Lading to 'at load port'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Insurance to 'shall be fully maintained and will not be changed'",
+      "type": "substitution"
+    }
+  ],
+  "confidence_score": 0.85,
+  "processing_notes": [
+    "Successfully extracted 19 fields from recap document",
+    "Template updated with actual extracted values",
+    "Document format and structure preserved",
+    "Ready for review and finalization"
+  ]
+}

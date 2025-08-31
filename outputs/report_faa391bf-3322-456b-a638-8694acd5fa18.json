@@ -1,0 +1,261 @@
+{
+  "generation_summary": {
+    "template_file": "template_47e6b3d0-327d-408b-9954-93892336d726.docx",
+    "recap_file": "recap_b3016a81-2946-4865-aead-3b92d0ab4ed8.pdf",
+    "generated_at": "2025-08-31 08:42:34",
+    "processing_time": "Real processing completed"
+  },
+  "extracted_terms": {
+    "vessel_name": "asdisponentOwnersofthe......of",
+    "flag": "/ freight forOwners\u2018account",
+    "class": "ed ABS",
+    "cargo_type": "in such safe berth",
+    "loading_port": "(s) 2. Thatthesaidvesselbeingtight",
+    "discharge_port": "s laytime shall commence at 08:00 hours ",
+    "freight_rate": "USD 40.95 pmt",
+    "laytime": "01hours",
+    "demurrage": "shallnotcountfromthetimethevesselisrejecteduntilthetimesheis",
+    "despatch": "money OwnersshallpaytoCharterersdespatchmoneyforlaytimesaved",
+    "charterer": "s 10 Anson Road #34-04/05/06 International Plaza S",
+    "owner": "s 1",
+    "charter_date": "d at",
+    "laycan": "thischarteratanytimethereafterbutnotlaterthanonehourafterthe",
+    "commission": "sail from Necochea because of the swell for more than 48 hrs",
+    "address_commission": "sail from Necochea because of the swell for more than 48 hrs",
+    "notice": "as per clause No",
+    "bills_lading": "shall not be claused by Master for reason ofinsects 83",
+    "insurance": "on cargo due to vessel\u2019s age and/or flag and/or class shall ",
+    "quantity": "21,607tons"
+  },
+  "mapped_fields": [
+    {
+      "template_field": "VESSEL NAME",
+      "recap_value": "asdisponentOwnersofthe......of",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "FLAG",
+      "recap_value": "/ freight forOwners\u2018account",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CLASS",
+      "recap_value": "ed ABS",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CARGO TYPE",
+      "recap_value": "in such safe berth",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "LOADING PORT",
+      "recap_value": "(s) 2. Thatthesaidvesselbeingtight",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "DISCHARGE PORT",
+      "recap_value": "s laytime shall commence at 08:00 hours ",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "FREIGHT RATE",
+      "recap_value": "USD 40.95 pmt",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "LAYTIME",
+      "recap_value": "01hours",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "DEMURRAGE",
+      "recap_value": "shallnotcountfromthetimethevesselisrejecteduntilthetimesheis",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "DESPATCH",
+      "recap_value": "money OwnersshallpaytoCharterersdespatchmoneyforlaytimesaved",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CHARTERER",
+      "recap_value": "s 10 Anson Road #34-04/05/06 International Plaza S",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "OWNER",
+      "recap_value": "s 1",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CHARTER DATE",
+      "recap_value": "d at",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "LAYCAN",
+      "recap_value": "thischarteratanytimethereafterbutnotlaterthanonehourafterthe",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "COMMISSION",
+      "recap_value": "sail from Necochea because of the swell for more than 48 hrs",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "ADDRESS COMMISSION",
+      "recap_value": "sail from Necochea because of the swell for more than 48 hrs",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "NOTICE",
+      "recap_value": "as per clause No",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "BILLS LADING",
+      "recap_value": "shall not be claused by Master for reason ofinsects 83",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "INSURANCE",
+      "recap_value": "on cargo due to vessel\u2019s age and/or flag and/or class shall ",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "QUANTITY",
+      "recap_value": "21,607tons",
+      "confidence": 0.9,
+      "status": "mapped"
+    }
+  ],
+  "changes_made": [
+    {
+      "section": "Document Update",
+      "change": "Updated Vessel Name to 'asdisponentOwnersofthe......of'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Flag to '/ freight forOwners\u2018account'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Class to 'ed ABS'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Cargo Type to 'in such safe berth'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Loading Port to '(s) 2. Thatthesaidvesselbeingtight'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Discharge Port to 's laytime shall commence at 08:00 hours '",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Freight Rate to 'USD 40.95 pmt'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Laytime to '01hours'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Demurrage to 'shallnotcountfromthetimethevesselisrejecteduntilthetimesheis'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Despatch to 'money OwnersshallpaytoCharterersdespatchmoneyforlaytimesaved'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Charterer to 's 10 Anson Road #34-04/05/06 International Plaza S'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Owner to 's 1'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Charter Date to 'd at'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Laycan to 'thischarteratanytimethereafterbutnotlaterthanonehourafterthe'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Commission to 'sail from Necochea because of the swell for more than 48 hrs'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Address Commission to 'sail from Necochea because of the swell for more than 48 hrs'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Notice to 'as per clause No'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Bills Lading to 'shall not be claused by Master for reason ofinsects 83'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Insurance to 'on cargo due to vessel\u2019s age and/or flag and/or class shall '",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Quantity to '21,607tons'",
+      "type": "substitution"
+    }
+  ],
+  "confidence_score": 0.85,
+  "processing_notes": [
+    "Successfully extracted 20 fields from recap document",
+    "Template updated with actual extracted values",
+    "Document format and structure preserved",
+    "Ready for review and finalization"
+  ]
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IME India - Institution of Mechanical Engineers</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      color: white; 
+      text-align: center;
+    }
+
+   .hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures image covers area without stretching */
+  z-index: -1; /* behind text and gradient */
+  opacity: 0.9; /* optional: reduce opacity if needed */
+}
+
+.hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3), rgba(0,0,0,0.9));
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.navbar, .hero-content {
+  position: relative; /* bring above gradient and image */
+  z-index: 10;
+}
+
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Navbar */
+   .navbar {
+  background: transparent;
+  padding: 0.8rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  backdrop-filter: none; /* remove blur if not needed */
+}
+
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* ensures logo stays left */
+  margin-left: 0; /* removes any default spacing */
+}
+
+
+    .logo img {
+      width: 120px;     
+      height: auto;    
+      margin-right: 0.1rem;
+      filter: drop-shadow(0 0 5px rgba(0, 0, 255, 0.6));
+
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    .nav-menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .nav-menu li a:hover,
+    .nav-menu li a.active {
+      color: #00a8ff;
+      background: rgba(0, 168, 255, 0.1);
+    }
+
+    /* Hero content */
+    .hero-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero-text {
+      max-width: 1000px; /* increased so text stays on one line */
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .hero-text h1 {
+      font-size: 3.8rem; /* slight bump for balance */
+      font-weight: 700;
+      color: white;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+      white-space: nowrap; /* prevent wrapping */
+    }
+
+    .hero-text p {
+      font-size: 1.3rem;
+      color: #ddd; 
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #00a8ff, #0078d4);
+      color: white;
+      padding: 1rem 2.5rem;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 168, 255, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 168, 255, 0.4);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2.5rem;
+        white-space: normal; /* allow wrapping on small screens */
+      }
+      .hero-text p {
+        font-size: 1.1rem;
+      }
+      .nav-menu {
+        gap: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+      .hero-text p {
+        font-size: 1rem;
+      }
+      .cta-button {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+      }
+    }
+
+    /* Dropdown container (hidden by default) */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* just below ABOUT */
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* tinted block */
+  color: white;
+  padding: 1rem;
+  min-width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 200;
+}
+
+/* Show dropdown when active */
+.dropdown.active .dropdown-content {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+  </style>
+</head>
+<body>
+  <div class="hero-section">
+  <!-- Background Image -->
+  <img src="{{ url_for('static', filename='images/front_final.png') }}" class="hero-img" alt="Background" />
+  <!-- Gradient Overlay -->
+  <div class="hero-gradient"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="IME Logo">
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#" class="active">HOME</a></li>
+        <li class="dropdown">
+          <a href="#" id="about-link">ABOUT</a>
+          <div class="dropdown-content">
+            <h3>About IME India</h3>
+            <p>IME India is dedicated to advancing mechanical engineering through professional training, certifications, and industry collaboration.</p>
+          </div>
+        </li>
+        <li><a href="{{ url_for('second') }}">GENERATE</a></li>
+
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Text -->
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Smart Charter Party Generator</h1>
+      <p>Next step towards professional contracts.</p>
+      <a href="{{ url_for('second') }}" class="cta-button">Build Final CP ➔</a>
+    </div>
+  </div>
+</div>
+
+  <script>
+  // Toggle dropdown on click
+  document.getElementById("about-link").addEventListener("click", function(e) {
+    e.preventDefault();
+    this.parentElement.classList.toggle("active");
+  });
+
+  // Close dropdown if clicked outside
+  window.addEventListener("click", function(e) {
+    const dropdown = document.querySelector(".dropdown");
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove("active");
+    }
+  });
+</script>
+
+</body>
+</html>

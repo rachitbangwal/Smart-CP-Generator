@@ -1,0 +1,249 @@
+{
+  "generation_summary": {
+    "template_file": "template_e3a4ed58-72d9-446c-8b42-5e59c1dc6b33.docx",
+    "recap_file": "recap_7b415f94-ec0e-4244-ae2c-0676669dca63.docx",
+    "generated_at": "2025-08-31 08:31:42",
+    "processing_time": "Real processing completed"
+  },
+  "extracted_terms": {
+    "vessel_name": "particulars for your ref. As t",
+    "flag": "upon takeover under our ownership",
+    "class": "/ Flag upon takeover under our ownership",
+    "cargo_type": "ES TO LOCAL COMPETENT AUTHORITIES\u2019 SATISFACTION AND AN INDEP",
+    "quantity": "30.00 MT",
+    "loading_port": "THE VESSEL SHOULD BE READY IN ALL RESPEC",
+    "discharge_port": "to the Charterers\u2019 nominated next destin",
+    "freight_rate": "Investor Services (UK), Clarks",
+    "charterer": "\u2019s option",
+    "owner": "ship",
+    "charter_date": "when vessel was handed back to Owners",
+    "laycan": "3-10 July \u2013 it is mutually agreed between both Owners and Ch",
+    "commission": "Each hire payment will be calculated as per the previous 15 ",
+    "address_commission": "Each hire payment will be calculated as per the previous 15 ",
+    "notice": "ON FIXING AND DAILY NOTICES THEREAFTER",
+    "bills_lading": "AND LOI",
+    "insurance": "(USD 19 MILLION H+M VALUE) AND WILL REMAIN SO THROUGHOUT THI",
+    "dwt": "2015\u00a0\u00a0\nDWT",
+    "laytime": "15 days\u00a0\n\n"
+  },
+  "mapped_fields": [
+    {
+      "template_field": "VESSEL NAME",
+      "recap_value": "particulars for your ref. As t",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "FLAG",
+      "recap_value": "upon takeover under our ownership",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CLASS",
+      "recap_value": "/ Flag upon takeover under our ownership",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CARGO TYPE",
+      "recap_value": "ES TO LOCAL COMPETENT AUTHORITIES\u2019 SATISFACTION AND AN INDEP",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "QUANTITY",
+      "recap_value": "30.00 MT",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "LOADING PORT",
+      "recap_value": "THE VESSEL SHOULD BE READY IN ALL RESPEC",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "DISCHARGE PORT",
+      "recap_value": "to the Charterers\u2019 nominated next destin",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "FREIGHT RATE",
+      "recap_value": "Investor Services (UK), Clarks",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CHARTERER",
+      "recap_value": "\u2019s option",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "OWNER",
+      "recap_value": "ship",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CHARTER DATE",
+      "recap_value": "when vessel was handed back to Owners",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "LAYCAN",
+      "recap_value": "3-10 July \u2013 it is mutually agreed between both Owners and Ch",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "COMMISSION",
+      "recap_value": "Each hire payment will be calculated as per the previous 15 ",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "ADDRESS COMMISSION",
+      "recap_value": "Each hire payment will be calculated as per the previous 15 ",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "NOTICE",
+      "recap_value": "ON FIXING AND DAILY NOTICES THEREAFTER",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "BILLS LADING",
+      "recap_value": "AND LOI",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "INSURANCE",
+      "recap_value": "(USD 19 MILLION H+M VALUE) AND WILL REMAIN SO THROUGHOUT THI",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "DWT",
+      "recap_value": "2015\u00a0\u00a0\nDWT",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "LAYTIME",
+      "recap_value": "15 days\u00a0\n\n",
+      "confidence": 0.9,
+      "status": "mapped"
+    }
+  ],
+  "changes_made": [
+    {
+      "section": "Document Update",
+      "change": "Updated Vessel Name to 'particulars for your ref. As t'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Flag to 'upon takeover under our ownership'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Class to '/ Flag upon takeover under our ownership'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Cargo Type to 'ES TO LOCAL COMPETENT AUTHORITIES\u2019 SATISFACTION AND AN INDEP'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Quantity to '30.00 MT'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Loading Port to 'THE VESSEL SHOULD BE READY IN ALL RESPEC'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Discharge Port to 'to the Charterers\u2019 nominated next destin'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Freight Rate to 'Investor Services (UK), Clarks'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Charterer to '\u2019s option'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Owner to 'ship'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Charter Date to 'when vessel was handed back to Owners'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Laycan to '3-10 July \u2013 it is mutually agreed between both Owners and Ch'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Commission to 'Each hire payment will be calculated as per the previous 15 '",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Address Commission to 'Each hire payment will be calculated as per the previous 15 '",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Notice to 'ON FIXING AND DAILY NOTICES THEREAFTER'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Bills Lading to 'AND LOI'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Insurance to '(USD 19 MILLION H+M VALUE) AND WILL REMAIN SO THROUGHOUT THI'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Dwt to '2015\u00a0\u00a0\nDWT'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Laytime to '15 days\u00a0\n\n'",
+      "type": "substitution"
+    }
+  ],
+  "confidence_score": 0.85,
+  "processing_notes": [
+    "Successfully extracted 19 fields from recap document",
+    "Template updated with actual extracted values",
+    "Document format and structure preserved",
+    "Ready for review and finalization"
+  ]
+}

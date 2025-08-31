@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IME India - Smart Contract Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height:1.6; overflow-x:hidden; }
+
+    /* COMMON HERO/UPLOAD BG */
+    .page-section { position: absolute; inset:0; width:100%; height:100%; display:flex; justify-content:center; align-items:center; flex-direction:column; opacity:0; pointer-events:none; transition: opacity 0.8s ease; }
+    .page-section.active { opacity:1; pointer-events:auto; }
+
+    .bg-img { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-2; }
+    .bg-gradient { position:absolute; inset:0; background:linear-gradient(120deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3), rgba(0,0,0,0.9)); background-size:200% 200%; animation: gradientMove 10s ease infinite; z-index:-1; }
+    @keyframes gradientMove { 0% { background-position:0% 50%; } 50% { background-position:100% 50%; } 100% { background-position:0% 50%; } }
+
+    /* Hero Section */
+    .hero-content { text-align:center; color:white; animation: fadeInUp 1s ease-out; padding:2rem; }
+    .hero-content h1 { font-size:3.8rem; font-weight:700; margin-bottom:1.5rem; line-height:1.2; }
+    .hero-content p { font-size:1.3rem; margin-bottom:2rem; color:#ddd; }
+    .cta-button { display:inline-block; background:linear-gradient(135deg,#00a8ff,#0078d4); color:white; padding:1rem 2.5rem; border-radius:50px; font-weight:600; font-size:1.1rem; transition: all 0.3s ease; box-shadow:0 4px 15px rgba(0,168,255,0.3); }
+    .cta-button:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,168,255,0.4); }
+
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+
+    /* Upload Section */
+    .upload-section { max-width:7xl; margin:auto; padding:3rem; display:grid; gap:3rem; grid-template-columns:1fr 1fr; }
+    .upload-card { background:white; /* solid white */ padding:2rem; border-radius:1.5rem; box-shadow:0 10px 30px rgba(0,0,0,0.1); transition: all 0.5s ease; cursor:pointer; }
+    .upload-card:hover { transform:scale(1.05); box-shadow:0 15px 35px rgba(0,0,0,0.2); }
+    .upload-card h2 { font-size:1.25rem; font-weight:600; margin-bottom:1rem; }
+    .upload-card p { color:#555; margin-bottom:1.5rem; }
+    .file-label { border:2px dashed #ccc; padding:2rem; border-radius:1rem; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#888; transition:all 0.3s ease; }
+    .file-label:hover { border-color:#0078d4; background:#e0f0ff; }
+
+    .download-section { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1.5rem; background:white; /* solid white */ padding:3rem; border-radius:1.5rem; box-shadow:0 10px 30px rgba(0,0,0,0.2); color:#0078d4; }
+    .download-section a { background:#0078d4; color:white; padding:1rem 2rem; border-radius:1rem; font-weight:600; text-decoration:none; transition:all 0.3s ease; }
+    .download-section a:hover { background:#005bb5; }
+
+    /* Animations for fadeIn */
+    @keyframes fadeIn { 0%{opacity:0; transform:translateY(20px);} 100%{opacity:1; transform:translateY(0);} }
+    .animate-fadeIn { animation:fadeIn 0.8s ease-in forwards; }
+
+    /* Navbar */
+    .navbar { position:absolute; top:0; left:0; width:100%; z-index:100; display:flex; justify-content:space-between; padding:1rem 2rem; }
+    .navbar a { color:white; text-decoration:none; margin-left:1rem; font-weight:500; transition:0.3s; }
+    .navbar a:hover { color:#00a8ff; }
+
+    @media(max-width:768px) { .upload-section { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: HERO -->
+  <div id="page1" class="page-section active">
+    <img src="images/front_final.png" class="bg-img" alt="BG">
+    <div class="bg-gradient"></div>
+    <div class="hero-content">
+      <h1>Smart Charter Party Generator</h1>
+      <p>Next step towards professional contracts.</p>
+      <button class="cta-button" id="generateBtn">+ Generate Contract</button>
+    </div>
+  </div>
+
+  <!-- PAGE 2: UPLOAD -->
+  <div id="page2" class="page-section">
+    <img src="images/front_final.png" class="bg-img" alt="BG">
+    <div class="bg-gradient"></div>
+
+    <main class="upload-section">
+      <!-- Upload Recap -->
+      <div class="upload-card animate-fadeIn">
+        <h2>Upload Recap</h2>
+        <p>Upload your recap document to extract vessel and cargo details</p>
+        <label class="file-label">Click or drag PDF/DOCX
+          <input type="file" class="hidden" accept=".pdf,.doc,.docx">
+        </label>
+      </div>
+
+      <!-- Upload Base Charter -->
+      <div class="upload-card animate-fadeIn">
+        <h2>Upload Base Charter Party</h2>
+        <p>Upload your base charter party template for contract generation</p>
+        <label class="file-label">Click or drag PDF/DOCX
+          <input type="file" class="hidden" accept=".pdf,.doc,.docx">
+        </label>
+      </div>
+
+      <!-- Download -->
+      <div class="download-section animate-fadeIn">
+        <h3>Download Contract</h3>
+        <a href="sample-contract.pdf" download>⬇ Download Now</a>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const page1 = document.getElementById('page1');
+    const page2 = document.getElementById('page2');
+    const generateBtn = document.getElementById('generateBtn');
+
+    generateBtn.addEventListener('click', () => {
+      page1.classList.remove('active');
+      page2.classList.add('active');
+    });
+  </script>
+
+</body>
+</html>

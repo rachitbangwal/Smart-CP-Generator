@@ -1,0 +1,26 @@
+CHARTER PARTY TEMPLATE
+
+VESSEL: [VESSEL_NAME]
+DWT: [DWT]
+BUILT: [YEAR_BUILT]
+
+CARGO:
+Type: [CARGO_TYPE]
+Quantity: [CARGO_QUANTITY]
+Loading Port: [LOADING_PORT]
+Discharge Port: [DISCHARGE_PORT]
+
+COMMERCIAL TERMS:
+Freight Rate: [FREIGHT_RATE]
+Laytime: [LAYTIME]
+Demurrage: [DEMURRAGE_RATE]
+
+GENERAL CONDITIONS:
+1. This Charter Party is subject to the terms and conditions as agreed between the parties.
+2. The vessel shall be delivered in good order and condition.
+3. All applicable maritime regulations shall be observed.
+
+Charterer: [CHARTERER_NAME]
+Owner: [OWNER_NAME]
+
+Date: [DATE]

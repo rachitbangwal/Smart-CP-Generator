@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Contract Pro - Generate</title>
+<style>
+  /* Basic Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+
+  body, html { height: 100%; }
+
+  body {
+    background: url('../static/images/front_final.png?v=1') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  main {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  @media(min-width: 768px){
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+  }
+
+  header h1 { font-size: 2.5rem; font-weight: 800; color: #ffffff; }
+  header p { color: #e5e7eb; font-size: 1.125rem; }
+  header button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    color: white;
+    font-weight: 600;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  header button:hover { transform: scale(1.05); opacity: 0.9; }
+
+  /* Sections Grid */
+  section { display: grid; gap: 2rem; }
+  @media(min-width: 768px){ section { grid-template-columns: repeat(2, 1fr); } }
+
+  /* Cards */
+  .upload-card, .card, .download-card {
+    background: rgba(255,255,255,0.95);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    color: #111827;
+  }
+
+  .upload-card:hover, .card:hover, .download-card:hover { transform: translateY(-5px); box-shadow: 0 12px 28px rgba(0,0,0,0.25); }
+
+  .upload-card h2, .card h3, .download-card h3 { font-weight: 700; margin-bottom: 0.5rem; }
+  .upload-card p { font-size: 0.95rem; margin-bottom: 1.5rem; }
+
+  .upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #d1d5db;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: #6b7280;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .upload-label:hover { border-color: #3b82f6; background-color: #eff6ff; }
+  .upload-label small { font-size: 0.8rem; }
+  input[type="file"] { display: none; }
+  .file-name { margin-top: 0.5rem; font-size: 0.85rem; color: #3b82f6; }
+
+  .contract-item { display: flex; justify-content: space-between; align-items: center; border-radius: 1rem; padding: 1rem; margin-bottom: 0.75rem; background: #f9fafb; color: #111827; border: 1px solid #e5e7eb; }
+  .contract-item:hover { background: #f3f4f6; }
+
+  .status { font-size: 0.75rem; padding: 0.25rem 0.5rem; border-radius: 9999px; }
+  .status.completed { background-color: #d1fae5; color: #065f46; }
+  .status.progress { background-color: #fef3c7; color: #78350f; }
+
+  .download-card {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    color: white;
+    text-align: center;
+  }
+
+  .download-card a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: white;
+    color: #3b82f6;
+    font-weight: 600;
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .download-card a:hover { background: #f3f4f6; transform: scale(1.05); }
+
+  /* Loading spinner */
+  .loading-spinner {
+    display: none;
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3b82f6;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Alert styles */
+  .alert {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    display: none;
+  }
+
+  .alert-success {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #34d399;
+  }
+
+  .alert-error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #f87171;
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar" style="background: rgba(0,0,0,0.5); padding: 1rem 0;">
+  <div class="nav-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;">
+    <div class="logo">
+      <a href="/" style="text-decoration: none; color: white; font-weight: bold; font-size: 1.2rem;">
+        IME Smart CP
+      </a>
+    </div>
+    <ul class="nav-menu" style="display: flex; list-style: none; gap: 1.5rem; margin: 0; padding: 0;">
+      <li><a href="/" style="color: white; text-decoration: none;">HOME</a></li>
+      <li><a href="/generate" style="color: white; text-decoration: none; font-weight: bold;">GENERATE</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="wrapper">
+<main>
+  <!-- Header -->
+  <header>
+    <div>
+      <h1>Smart Contract Generator</h1>
+      <p>Upload your recap and base charter party to generate intelligent contracts</p>
+    </div>
+    <button onclick="generateContract()" id="generate-btn">Generate Contract</button>
+  </header>
+
+  <!-- Alerts -->
+  <div id="success-alert" class="alert alert-success"></div>
+  <div id="error-alert" class="alert alert-error"></div>
+
+  <!-- Upload Section -->
+  <section>
+    <div class="upload-card">
+      <h2>Upload Recap</h2>
+      <p>Upload your recap document to extract vessel and cargo details</p>
+      <label class="upload-label" for="recap-upload">
+        <p>Click to upload or drag and drop</p>
+        <small>PDF, DOC, DOCX up to 10MB</small>
+        <input type="file" id="recap-upload" accept=".pdf,.doc,.docx">
+      </label>
+      <p id="recap-file-name" class="file-name"></p>
+      <div id="recap-loading" class="loading-spinner"></div>
+    </div>
+
+    <div class="upload-card">
+      <h2>Upload Base Charter Party</h2>
+      <p>Upload your base charter party template for contract generation</p>
+      <label class="upload-label" for="charter-upload">
+        <p>Click to upload or drag and drop</p>
+        <small>PDF, DOC, DOCX up to 10MB</small>
+        <input type="file" id="charter-upload" accept=".pdf,.doc,.docx">
+      </label>
+      <p id="charter-file-name" class="file-name"></p>
+      <div id="charter-loading" class="loading-spinner"></div>
+    </div>
+  </section>
+
+  <!-- Generation Section -->
+  <section>
+    <!-- Download button -->
+    <div class="download-card">
+      <h3>Download Contract</h3>
+      <div id="download-loading" class="loading-spinner"></div>
+      <a href="#" id="download-link" style="display: none;">⬇ Download Generated Contract</a>
+    </div>
+
+    <!-- Recent contracts -->
+    <div class="card">
+      <h3>Recent Contracts</h3>
+      <div id="recent-contracts">
+        <p style="color:#6b7280; font-size:0.9rem;">No contracts yet. They will appear here once generated.</p>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
+
+<script>
+  let templateId = null;
+  let recapId = null;
+  let currentDocumentId = null;
+
+  function showAlert(message, type) {
+    const alert = document.getElementById(`${type}-alert`);
+    alert.textContent = message;
+    alert.style.display = 'block';
+    setTimeout(() => {
+      alert.style.display = 'none';
+    }, 5000);
+  }
+
+  async function uploadFile(file, endpoint) {
+    const formData = new FormData();
+    formData.append('file', file);
+
+    const response = await fetch(`/api/${endpoint}/upload`, {
+      method: 'POST',
+      body: formData
+    });
+
+    if (!response.ok) {
+      throw new Error(`Upload failed: ${response.statusText}`);
+    }
+
+    return await response.json();
+  }
+
+  document.getElementById('recap-upload').addEventListener('change', async function() {
+    const file = this.files[0];
+    if (!file) return;
+
+    document.getElementById('recap-file-name').textContent = `Selected: ${file.name}`;
+    document.getElementById('recap-loading').style.display = 'block';
+
+    try {
+      const result = await uploadFile(file, 'recaps');
+      recapId = result.id;
+      showAlert('Recap document uploaded successfully', 'success');
+    } catch (error) {
+      showAlert(error.message, 'error');
+    } finally {
+      document.getElementById('recap-loading').style.display = 'none';
+    }
+  });
+
+  document.getElementById('charter-upload').addEventListener('change', async function() {
+    const file = this.files[0];
+    if (!file) return;
+
+    document.getElementById('charter-file-name').textContent = `Selected: ${file.name}`;
+    document.getElementById('charter-loading').style.display = 'block';
+
+    try {
+      const result = await uploadFile(file, 'templates');
+      templateId = result.id;
+      showAlert('Charter Party template uploaded successfully', 'success');
+    } catch (error) {
+      showAlert(error.message, 'error');
+    } finally {
+      document.getElementById('charter-loading').style.display = 'none';
+    }
+  });
+
+  async function generateContract() {
+    if (!templateId || !recapId) {
+      showAlert('Please upload both recap and template files first', 'error');
+      return;
+    }
+
+    const generateBtn = document.getElementById('generate-btn');
+    generateBtn.disabled = true;
+    document.getElementById('download-loading').style.display = 'block';
+
+    try {
+      const response = await fetch('/api/generate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          template_id: templateId,
+          recap_id: recapId
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error(`Generation failed: ${response.statusText}`);
+      }
+
+      const result = await response.json();
+      currentDocumentId = result.document_id;
+
+      showAlert('Charter Party generated successfully', 'success');
+      const downloadLink = document.getElementById('download-link');
+      downloadLink.href = `/api/download/${currentDocumentId}`;
+      downloadLink.style.display = 'block';
+
+      // Update recent contracts
+      updateRecentContracts(currentDocumentId);
+    } catch (error) {
+      showAlert(error.message, 'error');
+    } finally {
+      generateBtn.disabled = false;
+      document.getElementById('download-loading').style.display = 'none';
+    }
+  }
+
+  function updateRecentContracts(documentId) {
+    const recentContracts = document.getElementById('recent-contracts');
+    const contractItem = document.createElement('div');
+    contractItem.className = 'contract-item';
+    contractItem.innerHTML = `
+      <div>
+        <strong>Generated Contract</strong>
+        <span class="status completed">Completed</span>
+      </div>
+      <div>
+        <a href="/api/download/${documentId}" class="cta-button">Download</a>
+        <a href="/api/report/${documentId}" class="cta-button">View Report</a>
+      </div>
+    `;
+    
+    if (recentContracts.firstChild.tagName === 'P') {
+      recentContracts.innerHTML = '';
+    }
+    recentContracts.insertBefore(contractItem, recentContracts.firstChild);
+  }
+</script>
+
+</body>
+</html>

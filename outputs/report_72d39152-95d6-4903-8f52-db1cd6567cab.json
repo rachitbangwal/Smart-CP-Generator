@@ -1,0 +1,165 @@
+{
+  "generation_summary": {
+    "template_file": "template_ca5c46eb-2f40-43a2-98cf-0e03683e0d6e.docx",
+    "recap_file": "recap_38e4b195-1b37-4440-a8cf-2a87ad38ab70.docx",
+    "generated_at": "2025-08-31 09:19:46",
+    "processing_time": "Real processing completed"
+  },
+  "extracted_terms": {
+    "owner": "ownership",
+    "commission": "collision",
+    "insurance": "insurance",
+    "loading_port": "Loadline",
+    "flag": "Registry",
+    "class": "Classification",
+    "charterer": "CLEAN FIX RECAP CP",
+    "charter_date": "12022B",
+    "freight_rate": "41,497 NT",
+    "quantity": "63,326 MT",
+    "cargo_type": "USD 40.95",
+    "laytime": "00 hours"
+  },
+  "mapped_fields": [
+    {
+      "template_field": "OWNER",
+      "recap_value": "ownership",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "COMMISSION",
+      "recap_value": "collision",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "INSURANCE",
+      "recap_value": "insurance",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "LOADING PORT",
+      "recap_value": "Loadline",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "FLAG",
+      "recap_value": "Registry",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CLASS",
+      "recap_value": "Classification",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CHARTERER",
+      "recap_value": "CLEAN FIX RECAP CP",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CHARTER DATE",
+      "recap_value": "12022B",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "FREIGHT RATE",
+      "recap_value": "41,497 NT",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "QUANTITY",
+      "recap_value": "63,326 MT",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "CARGO TYPE",
+      "recap_value": "USD 40.95",
+      "confidence": 0.9,
+      "status": "mapped"
+    },
+    {
+      "template_field": "LAYTIME",
+      "recap_value": "00 hours",
+      "confidence": 0.9,
+      "status": "mapped"
+    }
+  ],
+  "changes_made": [
+    {
+      "section": "Document Update",
+      "change": "Updated Owner to 'ownership'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Commission to 'collision'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Insurance to 'insurance'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Loading Port to 'Loadline'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Flag to 'Registry'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Class to 'Classification'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Charterer to 'CLEAN FIX RECAP CP'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Charter Date to '12022B'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Freight Rate to '41,497 NT'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Quantity to '63,326 MT'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Cargo Type to 'USD 40.95'",
+      "type": "substitution"
+    },
+    {
+      "section": "Document Update",
+      "change": "Updated Laytime to '00 hours'",
+      "type": "substitution"
+    }
+  ],
+  "confidence_score": 0.85,
+  "processing_notes": [
+    "Successfully extracted 12 fields from recap document",
+    "Template updated with actual extracted values",
+    "Document format and structure preserved",
+    "Ready for review and finalization"
+  ]
+}

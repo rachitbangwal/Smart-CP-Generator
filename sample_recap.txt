@@ -1,0 +1,37 @@
+CHARTER PARTY RECAP
+
+Vessel Details:
+Vessel Name: M/V OCEAN STAR
+DWT: 75,000 MT
+Year Built: 2018
+Flag: Panama
+
+Cargo Information:
+Cargo Type: GRAIN (WHEAT)
+Quantity: 70,000 MT (+/- 10% at Charterer's option)
+Loading Port: Houston, USA
+Discharge Port: Hamburg, Germany
+
+Commercial Terms:
+Freight Rate: USD 45.50 per metric ton
+Payment: 95% on signing Bills of Lading, 5% on completion of discharge
+Laytime: 72 hours total (loading and discharging combined)
+Demurrage: USD 25,000 per day pro rata
+
+Additional Terms:
+- Free In and Out (FIO)
+- Weather permitting
+- Charterer provides stevedores
+- Owner provides bunkers
+
+Charterer: ABC GRAIN TRADING LTD
+Owner: MARITIME SHIPPING CORP
+
+Charter Date: March 15, 2025
+Expected Loading: April 1-5, 2025
+Expected Discharge: April 20-25, 2025
+
+Notes:
+- Vessel inspection required prior to loading
+- All port charges for owner's account except stevedoring
+- Insurance: P&I Club coverage required
