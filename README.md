@@ -4,7 +4,7 @@ A Python-based application that automates the creation of Charter Party (CP) con
 
 ## Features
 
-- **Input Processing**: Accept base CP templates in PDF/DOCX format (GENCON, NYPE, SHELLTIME)
+- **Input Processing**: Accept base CP templates in DOCX format (SHELLTIME)
 - **Template Management**: Convert base CP templates to structured format with field identification
 - **Intelligence Engine**: Use NLP for intelligent term extraction from recap documents
 - **Document Generation**: Fill template fields while maintaining original formatting
@@ -12,11 +12,10 @@ A Python-based application that automates the creation of Charter Party (CP) con
 
 ## Technical Stack
 
-- **Backend**: Python 3.9+, FastAPI, Uvicorn
-- **NLP**: spaCy, NLTK, sentence-transformers
+- **Backend**: Python 3.9+, FastAPI
+- **NLP**: spaCy
 - **Document Processing**: python-docx, PyPDF2, pdfplumber, pdf2docx
 - **Database**: SQLite for templates and mappings
-- **Testing**: pytest with comprehensive test coverage
 - **Deployment**: Podman containerization
 
 ## Installation
@@ -56,45 +55,31 @@ python -m spacy download en_core_web_sm
 python simple_app.py
 ```
 
-### Full Application (when dependencies are fully resolved)
-```bash
-uvicorn src.main:app --reload
-```
-
 Access the application at:
-- **API**: http://localhost:8000
-- **Health Check**: http://localhost:8000/health
-- **API Documentation**: http://localhost:8000/docs (for full app)
+- **API**: http://localhost:8001
+- **Health Check**: http://localhost:8001/health
+- **API Documentation**: http://localhost:8001/docs (for full app)
 
 ## Current Status
 
-✅ **Completed Components:**
-- Complete project structure with all modules
-- FastAPI application framework
-- Document parsers (PDF, DOCX, TXT support)
-- NLP processing with spaCy integration
-- Template preprocessing engine
-- Charter Party generation engine
-- File management utilities
-- Comprehensive test suite
-- Sample data (GENCON template, sample recap)
-
 ⚠️ **Known Issues:**
+- Partially Working
+- currently unable to replace clauses from fixture recap to Base CP
+- replacement of items not Working properly.
 - SQLAlchemy compatibility issue with Python 3.13 (simple API works)
-- spaCy model download requires network connectivity
-- Some advanced features require manual dependency resolution
 
 ## Development Status
 
 The project includes a **complete, production-ready codebase** with:
 
-- **Smart recap parsing** with regex and NLP extraction
-- **Template field detection** using pattern matching
-- **Semantic term mapping** with TF-IDF similarity
-- **Document generation** with change tracking
+- ~~**Smart recap parsing** with regex and NLP extraction~~
+- ~~**Template field detection** using pattern matching~~
+- ~~**Format** maintaining base cp format~~
+- ~~**Semantic term mapping** with TF-IDF similarity~~
+- ~~**Document generation** with change tracking~~
+- **Document Updation** updating clauses according to recap 
 - **Multiple output formats** (DOCX, HTML, text)
 - **Comprehensive logging** and error handling
-- **Full test coverage** for all components
 
 ## Project Structure
 
@@ -134,7 +119,3 @@ Run with development server:
 ```bash
 uvicorn src.main:app --reload --log-level debug
 ```
-
-## License
-
-MIT License
